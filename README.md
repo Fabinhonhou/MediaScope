@@ -90,8 +90,9 @@ O projeto estará acessível em: http://127.0.0.1:8000/
 
 (como é algo sobre análise de redes sociais com a utilização de um canal Youtube, é necessário que a conta utilizada tenha um canal no youtube. Caso a conta não possua um canal, irá aparecer a menssagem que a conta não possui dados para a análise. Nossos testes estão sendo feitos na conta de um amigo que será utilizada na apresentação final do trabalho.)
 
+---
 
-🧪 Funcionalidades Principais
+### 🧪 Funcionalidades Principais
 1.Autenticação Híbrida: Login via E-mail/Senha ou Google (YouTube).
 
 2.Pipeline de Perfil: Recuperação automática da foto e ID do canal do YouTube após o login.
@@ -102,6 +103,8 @@ O projeto estará acessível em: http://127.0.0.1:8000/
 
 5.Configurações de Usuário: Edição de perfil, troca de senha, dark mode e "Danger Zone" (Exclusão de conta).
 
-⚠️ Observações Importantes
+--- 
+
+### ⚠️ Observações Importantes
 
 O sistema de upload de fotos ignora arquivos locais no Git para manter o repositório leve.
