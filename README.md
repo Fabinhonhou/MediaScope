@@ -76,7 +76,7 @@ python -m venv .venv
 source .venv/bin/activate   # Linux / macOS
 .venv\Scripts\activate    # Windows (PowerShell)
 ```
-3. Crie o arquivo `.env`  (explicação de como obter a api key do youtube )
+3. Crie o arquivo `.env`  (explicação de como obter a api key do youtube e a de Auth logo depois desse passo a passo )
 ```bash
 SECRET_KEY = 'sua-secret-key-aqui'
 
