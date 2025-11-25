@@ -91,14 +91,22 @@ def admin_clients_view(request):
     }
     return render(request, 'core/admin_clients.html', context)
 
-# Em core/views.py
 def home_view(request):
-    # Se o usuário já está logado, manda pro dashboard
-    if request.user.is_authenticated:
-        return redirect('dashboard_home')
-
-    # Se não, manda para a PÁGINA DE LOGIN REAL
-    return redirect('login')
+    """
+    Landing Page Pública.
+    """
+    #if request.user.is_authenticated:
+     #   return redirect('dashboard_home')
+    
+    # --- AQUI TÁ O SEGREDO ---
+    # Buscamos os planos para mostrar na capa
+    plans = Plan.objects.all().order_by('price_monthly')
+    
+    context = {
+        'plans': plans
+    }
+    
+    return render(request, 'core/landing.html', context)
 
 
 def planos_view(request):
