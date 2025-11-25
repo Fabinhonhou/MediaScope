@@ -13,10 +13,8 @@ MediaScope é uma plataforma para coletar, processar e visualizar métricas de c
 - [Instalação](#instalação)
 - [Configuração (API Keys e .env)](#configuração-api-keys-e-env)
 - [Como rodar](#como-rodar)
-- [Scripts úteis](#scripts-úteis)
 - [Como a YouTube Data API é utilizada](#como-a-youtube-data-api-é-utilizada)
 - [Banco de dados](#banco-de-dados)
-- [Testes](#testes)
 - [Melhorias futuras](#melhorias-futuras)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
@@ -65,8 +63,11 @@ Pastas e arquivos importantes:
 
 1. Clone o repositório:
 ```bash
-git clone /mnt/data/Project_MediaScope_Senai-dash.zip media_scope
-cd media_scope
+git clone https://github.com/Fabinhonhou/MediaScope.git
+cd MediaScope
+# caso esteja em outra branch, use o comando git checkout nome-da-branch
+# nesse caso, a branch está como dash
+git checkout dash
 ```
 
 2. Crie e ative um virtualenv (recomendado):
@@ -75,7 +76,7 @@ python -m venv .venv
 source .venv/bin/activate   # Linux / macOS
 .venv\Scripts\activate    # Windows (PowerShell)
 ```
-3. Crie o arquivo `.env`  (explicação de como obter a api key do youtube )
+3. Crie o arquivo `.env`  (explicação de como obter a api key do youtube e a de Auth logo depois desse passo a passo )
 ```bash
 SECRET_KEY = 'sua-secret-key-aqui'
 
